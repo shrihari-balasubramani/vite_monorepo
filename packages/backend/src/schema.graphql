@@ -1,0 +1,13 @@
+type Query {
+  hello(subject: String): String
+  todo(id: String!): Todo
+}
+type Mutation {
+  createTodo(title: String!, complete: Boolean!): Boolean
+}
+
+type Todo {
+  id: String!
+  text: String!
+  complete: Boolean!
+}
